@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <img class="logo" src="img/logo.png">
+    <textarea class="txa" type="text" id="txtEncriptador" placeholder="Ingrese el texto..." required></textarea>
+    <span class="help"><i class="bi bi-exclamation-circle-fill"></i>&nbsp;Solo letras minúsculas y sin acentos</span>
+
+    <div class="resp">
+    <button class="Encriptador" id="btnEncriptador">Encriptar</button>
+    <button class="Desencriptador" id="btnDesencriptador">Desencriptar</button>
+    </div>
+    <div class="card">
+        <div class="box1">
+            <img id="l2" src="img/logo2.png">
+            <h2 id="sinResultado">Ningún mensaje fue encontrado</h2>
+            <span class="ingresa" id="sinResultado1">Ingresa el texto que desees encriptar o desencriptar.</span>
+            <textarea class="resultado" id="txtDesencriptador"></textarea>  
+            <button onclick="copiar()" id="btnCopiar" hidden>Copiar</button>
+        </div>
+    </div>
+    
+</body>
+<script src="js/encriptador.js"></script>
+
+</html>
